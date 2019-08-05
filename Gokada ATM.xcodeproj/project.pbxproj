@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		141CDA2D22F8AF8D005067E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141CDA2B22F8AF8D005067E5 /* LaunchScreen.storyboard */; };
 		141CDA3822F8AF8D005067E5 /* Gokada_ATMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA3722F8AF8D005067E5 /* Gokada_ATMTests.swift */; };
 		141CDA4322F8AF8D005067E5 /* Gokada_ATMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA4222F8AF8D005067E5 /* Gokada_ATMUITests.swift */; };
+		1BA423E6AC0EAFE4878CA1AD /* Pods_Gokada_ATMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4290627A9E244F007211B257 /* Pods_Gokada_ATMUITests.framework */; };
+		1C506143A5C37A8E611683ED /* Pods_Gokada_ATMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A67AECE3E3C9326FFDBBB3D /* Pods_Gokada_ATMTests.framework */; };
+		CA0195060EDADB5A512B4D42 /* Pods_Gokada_ATM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11656D3D7274700ACB3D80D4 /* Pods_Gokada_ATM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11656D3D7274700ACB3D80D4 /* Pods_Gokada_ATM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gokada_ATM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		141CDA1F22F8AF8A005067E5 /* Gokada ATM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gokada ATM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		141CDA2222F8AF8A005067E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		141CDA2422F8AF8A005067E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,14 @@
 		141CDA3E22F8AF8D005067E5 /* Gokada ATMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gokada ATMUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		141CDA4222F8AF8D005067E5 /* Gokada_ATMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gokada_ATMUITests.swift; sourceTree = "<group>"; };
 		141CDA4422F8AF8D005067E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A67AECE3E3C9326FFDBBB3D /* Pods_Gokada_ATMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gokada_ATMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		208A73400A94833FBBC8D274 /* Pods-Gokada ATM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada ATM.release.xcconfig"; path = "Target Support Files/Pods-Gokada ATM/Pods-Gokada ATM.release.xcconfig"; sourceTree = "<group>"; };
+		3FBA025893BE558AD20718E2 /* Pods-Gokada ATMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada ATMUITests.release.xcconfig"; path = "Target Support Files/Pods-Gokada ATMUITests/Pods-Gokada ATMUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4290627A9E244F007211B257 /* Pods_Gokada_ATMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gokada_ATMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8371C1C2841FD28E552EB07D /* Pods-Gokada ATMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada ATMTests.debug.xcconfig"; path = "Target Support Files/Pods-Gokada ATMTests/Pods-Gokada ATMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		883A54D3B59E88680D83FC0D /* Pods-Gokada ATMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada ATMTests.release.xcconfig"; path = "Target Support Files/Pods-Gokada ATMTests/Pods-Gokada ATMTests.release.xcconfig"; sourceTree = "<group>"; };
+		8DB54EB4E1BDDF4DE53150A7 /* Pods-Gokada ATMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada ATMUITests.debug.xcconfig"; path = "Target Support Files/Pods-Gokada ATMUITests/Pods-Gokada ATMUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F1FA0DB11873175259AE3F41 /* Pods-Gokada ATM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada ATM.debug.xcconfig"; path = "Target Support Files/Pods-Gokada ATM/Pods-Gokada ATM.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA0195060EDADB5A512B4D42 /* Pods_Gokada_ATM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C506143A5C37A8E611683ED /* Pods_Gokada_ATMTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA423E6AC0EAFE4878CA1AD /* Pods_Gokada_ATMUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				141CDA3622F8AF8D005067E5 /* Gokada ATMTests */,
 				141CDA4122F8AF8D005067E5 /* Gokada ATMUITests */,
 				141CDA2022F8AF8A005067E5 /* Products */,
+				D6D612E38AF1D856C26CF0C8 /* Pods */,
+				CA3909E0F11C3EEF89471404 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +114,10 @@
 		141CDA2122F8AF8A005067E5 /* Gokada ATM */ = {
 			isa = PBXGroup;
 			children = (
-				141CDA2222F8AF8A005067E5 /* AppDelegate.swift */,
-				141CDA2422F8AF8A005067E5 /* ViewController.swift */,
-				141CDA2622F8AF8A005067E5 /* Main.storyboard */,
-				141CDA2922F8AF8D005067E5 /* Assets.xcassets */,
-				141CDA2B22F8AF8D005067E5 /* LaunchScreen.storyboard */,
-				141CDA2E22F8AF8D005067E5 /* Info.plist */,
+				141CDA5322F8B07E005067E5 /* Supporting Files */,
+				141CDA5222F8B075005067E5 /* Storyboards */,
+				141CDA5122F8B029005067E5 /* Screens */,
+				141CDA5022F8B01A005067E5 /* Base */,
 			);
 			path = "Gokada ATM";
 			sourceTree = "<group>";
@@ -125,6 +140,63 @@
 			path = "Gokada ATMUITests";
 			sourceTree = "<group>";
 		};
+		141CDA5022F8B01A005067E5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				141CDA2222F8AF8A005067E5 /* AppDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		141CDA5122F8B029005067E5 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				141CDA2422F8AF8A005067E5 /* ViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		141CDA5222F8B075005067E5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				141CDA2622F8AF8A005067E5 /* Main.storyboard */,
+				141CDA2B22F8AF8D005067E5 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		141CDA5322F8B07E005067E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				141CDA2922F8AF8D005067E5 /* Assets.xcassets */,
+				141CDA2E22F8AF8D005067E5 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA3909E0F11C3EEF89471404 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11656D3D7274700ACB3D80D4 /* Pods_Gokada_ATM.framework */,
+				1A67AECE3E3C9326FFDBBB3D /* Pods_Gokada_ATMTests.framework */,
+				4290627A9E244F007211B257 /* Pods_Gokada_ATMUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6D612E38AF1D856C26CF0C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1FA0DB11873175259AE3F41 /* Pods-Gokada ATM.debug.xcconfig */,
+				208A73400A94833FBBC8D274 /* Pods-Gokada ATM.release.xcconfig */,
+				8371C1C2841FD28E552EB07D /* Pods-Gokada ATMTests.debug.xcconfig */,
+				883A54D3B59E88680D83FC0D /* Pods-Gokada ATMTests.release.xcconfig */,
+				8DB54EB4E1BDDF4DE53150A7 /* Pods-Gokada ATMUITests.debug.xcconfig */,
+				3FBA025893BE558AD20718E2 /* Pods-Gokada ATMUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 141CDA4722F8AF8D005067E5 /* Build configuration list for PBXNativeTarget "Gokada ATM" */;
 			buildPhases = (
+				A28100CFC5EA7DB008328000 /* [CP] Check Pods Manifest.lock */,
 				141CDA1B22F8AF8A005067E5 /* Sources */,
 				141CDA1C22F8AF8A005067E5 /* Frameworks */,
 				141CDA1D22F8AF8A005067E5 /* Resources */,
+				FA7E2724F16E4DC910408DEF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +223,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 141CDA4A22F8AF8D005067E5 /* Build configuration list for PBXNativeTarget "Gokada ATMTests" */;
 			buildPhases = (
+				4AE0B348198D5C6ED1ABFC2D /* [CP] Check Pods Manifest.lock */,
 				141CDA2F22F8AF8D005067E5 /* Sources */,
 				141CDA3022F8AF8D005067E5 /* Frameworks */,
 				141CDA3122F8AF8D005067E5 /* Resources */,
@@ -167,6 +242,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 141CDA4D22F8AF8D005067E5 /* Build configuration list for PBXNativeTarget "Gokada ATMUITests" */;
 			buildPhases = (
+				59015EF1D65DBB45DDB62832 /* [CP] Check Pods Manifest.lock */,
 				141CDA3A22F8AF8D005067E5 /* Sources */,
 				141CDA3B22F8AF8D005067E5 /* Frameworks */,
 				141CDA3C22F8AF8D005067E5 /* Resources */,
@@ -250,6 +326,92 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4AE0B348198D5C6ED1ABFC2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gokada ATMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59015EF1D65DBB45DDB62832 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gokada ATMUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A28100CFC5EA7DB008328000 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gokada ATM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA7E2724F16E4DC910408DEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gokada ATM/Pods-Gokada ATM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gokada ATM/Pods-Gokada ATM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gokada ATM/Pods-Gokada ATM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		141CDA1B22F8AF8A005067E5 /* Sources */ = {
@@ -430,6 +592,7 @@
 		};
 		141CDA4822F8AF8D005067E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1FA0DB11873175259AE3F41 /* Pods-Gokada ATM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +611,7 @@
 		};
 		141CDA4922F8AF8D005067E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 208A73400A94833FBBC8D274 /* Pods-Gokada ATM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +630,7 @@
 		};
 		141CDA4B22F8AF8D005067E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8371C1C2841FD28E552EB07D /* Pods-Gokada ATMTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +652,7 @@
 		};
 		141CDA4C22F8AF8D005067E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 883A54D3B59E88680D83FC0D /* Pods-Gokada ATMTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +674,7 @@
 		};
 		141CDA4E22F8AF8D005067E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DB54EB4E1BDDF4DE53150A7 /* Pods-Gokada ATMUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +695,7 @@
 		};
 		141CDA4F22F8AF8D005067E5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FBA025893BE558AD20718E2 /* Pods-Gokada ATMUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
