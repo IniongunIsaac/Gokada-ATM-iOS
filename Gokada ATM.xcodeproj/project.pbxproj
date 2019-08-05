@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		141CDA2322F8AF8A005067E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA2222F8AF8A005067E5 /* AppDelegate.swift */; };
+		141CDA2522F8AF8A005067E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA2422F8AF8A005067E5 /* ViewController.swift */; };
+		141CDA2822F8AF8A005067E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141CDA2622F8AF8A005067E5 /* Main.storyboard */; };
+		141CDA2A22F8AF8D005067E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 141CDA2922F8AF8D005067E5 /* Assets.xcassets */; };
+		141CDA2D22F8AF8D005067E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141CDA2B22F8AF8D005067E5 /* LaunchScreen.storyboard */; };
+		141CDA3822F8AF8D005067E5 /* Gokada_ATMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA3722F8AF8D005067E5 /* Gokada_ATMTests.swift */; };
+		141CDA4322F8AF8D005067E5 /* Gokada_ATMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA4222F8AF8D005067E5 /* Gokada_ATMUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		141CDA3422F8AF8D005067E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 141CDA1722F8AF8A005067E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 141CDA1E22F8AF8A005067E5;
+			remoteInfo = "Gokada ATM";
+		};
+		141CDA3F22F8AF8D005067E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 141CDA1722F8AF8A005067E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 141CDA1E22F8AF8A005067E5;
+			remoteInfo = "Gokada ATM";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		141CDA1F22F8AF8A005067E5 /* Gokada ATM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gokada ATM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		141CDA2222F8AF8A005067E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		141CDA2422F8AF8A005067E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		141CDA2722F8AF8A005067E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		141CDA2922F8AF8D005067E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		141CDA2C22F8AF8D005067E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		141CDA2E22F8AF8D005067E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		141CDA3322F8AF8D005067E5 /* Gokada ATMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gokada ATMTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		141CDA3722F8AF8D005067E5 /* Gokada_ATMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gokada_ATMTests.swift; sourceTree = "<group>"; };
+		141CDA3922F8AF8D005067E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		141CDA3E22F8AF8D005067E5 /* Gokada ATMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gokada ATMUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		141CDA4222F8AF8D005067E5 /* Gokada_ATMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gokada_ATMUITests.swift; sourceTree = "<group>"; };
+		141CDA4422F8AF8D005067E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		141CDA1C22F8AF8A005067E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		141CDA3022F8AF8D005067E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		141CDA3B22F8AF8D005067E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		141CDA1622F8AF8A005067E5 = {
+			isa = PBXGroup;
+			children = (
+				141CDA2122F8AF8A005067E5 /* Gokada ATM */,
+				141CDA3622F8AF8D005067E5 /* Gokada ATMTests */,
+				141CDA4122F8AF8D005067E5 /* Gokada ATMUITests */,
+				141CDA2022F8AF8A005067E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		141CDA2022F8AF8A005067E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				141CDA1F22F8AF8A005067E5 /* Gokada ATM.app */,
+				141CDA3322F8AF8D005067E5 /* Gokada ATMTests.xctest */,
+				141CDA3E22F8AF8D005067E5 /* Gokada ATMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		141CDA2122F8AF8A005067E5 /* Gokada ATM */ = {
+			isa = PBXGroup;
+			children = (
+				141CDA2222F8AF8A005067E5 /* AppDelegate.swift */,
+				141CDA2422F8AF8A005067E5 /* ViewController.swift */,
+				141CDA2622F8AF8A005067E5 /* Main.storyboard */,
+				141CDA2922F8AF8D005067E5 /* Assets.xcassets */,
+				141CDA2B22F8AF8D005067E5 /* LaunchScreen.storyboard */,
+				141CDA2E22F8AF8D005067E5 /* Info.plist */,
+			);
+			path = "Gokada ATM";
+			sourceTree = "<group>";
+		};
+		141CDA3622F8AF8D005067E5 /* Gokada ATMTests */ = {
+			isa = PBXGroup;
+			children = (
+				141CDA3722F8AF8D005067E5 /* Gokada_ATMTests.swift */,
+				141CDA3922F8AF8D005067E5 /* Info.plist */,
+			);
+			path = "Gokada ATMTests";
+			sourceTree = "<group>";
+		};
+		141CDA4122F8AF8D005067E5 /* Gokada ATMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				141CDA4222F8AF8D005067E5 /* Gokada_ATMUITests.swift */,
+				141CDA4422F8AF8D005067E5 /* Info.plist */,
+			);
+			path = "Gokada ATMUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		141CDA1E22F8AF8A005067E5 /* Gokada ATM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 141CDA4722F8AF8D005067E5 /* Build configuration list for PBXNativeTarget "Gokada ATM" */;
+			buildPhases = (
+				141CDA1B22F8AF8A005067E5 /* Sources */,
+				141CDA1C22F8AF8A005067E5 /* Frameworks */,
+				141CDA1D22F8AF8A005067E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gokada ATM";
+			productName = "Gokada ATM";
+			productReference = 141CDA1F22F8AF8A005067E5 /* Gokada ATM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		141CDA3222F8AF8D005067E5 /* Gokada ATMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 141CDA4A22F8AF8D005067E5 /* Build configuration list for PBXNativeTarget "Gokada ATMTests" */;
+			buildPhases = (
+				141CDA2F22F8AF8D005067E5 /* Sources */,
+				141CDA3022F8AF8D005067E5 /* Frameworks */,
+				141CDA3122F8AF8D005067E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				141CDA3522F8AF8D005067E5 /* PBXTargetDependency */,
+			);
+			name = "Gokada ATMTests";
+			productName = "Gokada ATMTests";
+			productReference = 141CDA3322F8AF8D005067E5 /* Gokada ATMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		141CDA3D22F8AF8D005067E5 /* Gokada ATMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 141CDA4D22F8AF8D005067E5 /* Build configuration list for PBXNativeTarget "Gokada ATMUITests" */;
+			buildPhases = (
+				141CDA3A22F8AF8D005067E5 /* Sources */,
+				141CDA3B22F8AF8D005067E5 /* Frameworks */,
+				141CDA3C22F8AF8D005067E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				141CDA4022F8AF8D005067E5 /* PBXTargetDependency */,
+			);
+			name = "Gokada ATMUITests";
+			productName = "Gokada ATMUITests";
+			productReference = 141CDA3E22F8AF8D005067E5 /* Gokada ATMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		141CDA1722F8AF8A005067E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Ing Groups";
+				TargetAttributes = {
+					141CDA1E22F8AF8A005067E5 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					141CDA3222F8AF8D005067E5 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 141CDA1E22F8AF8A005067E5;
+					};
+					141CDA3D22F8AF8D005067E5 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 141CDA1E22F8AF8A005067E5;
+					};
+				};
+			};
+			buildConfigurationList = 141CDA1A22F8AF8A005067E5 /* Build configuration list for PBXProject "Gokada ATM" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 141CDA1622F8AF8A005067E5;
+			productRefGroup = 141CDA2022F8AF8A005067E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				141CDA1E22F8AF8A005067E5 /* Gokada ATM */,
+				141CDA3222F8AF8D005067E5 /* Gokada ATMTests */,
+				141CDA3D22F8AF8D005067E5 /* Gokada ATMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		141CDA1D22F8AF8A005067E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				141CDA2D22F8AF8D005067E5 /* LaunchScreen.storyboard in Resources */,
+				141CDA2A22F8AF8D005067E5 /* Assets.xcassets in Resources */,
+				141CDA2822F8AF8A005067E5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		141CDA3122F8AF8D005067E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		141CDA3C22F8AF8D005067E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		141CDA1B22F8AF8A005067E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				141CDA2522F8AF8A005067E5 /* ViewController.swift in Sources */,
+				141CDA2322F8AF8A005067E5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		141CDA2F22F8AF8D005067E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				141CDA3822F8AF8D005067E5 /* Gokada_ATMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		141CDA3A22F8AF8D005067E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				141CDA4322F8AF8D005067E5 /* Gokada_ATMUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		141CDA3522F8AF8D005067E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 141CDA1E22F8AF8A005067E5 /* Gokada ATM */;
+			targetProxy = 141CDA3422F8AF8D005067E5 /* PBXContainerItemProxy */;
+		};
+		141CDA4022F8AF8D005067E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 141CDA1E22F8AF8A005067E5 /* Gokada ATM */;
+			targetProxy = 141CDA3F22F8AF8D005067E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		141CDA2622F8AF8A005067E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				141CDA2722F8AF8A005067E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		141CDA2B22F8AF8D005067E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				141CDA2C22F8AF8D005067E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		141CDA4522F8AF8D005067E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		141CDA4622F8AF8D005067E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		141CDA4822F8AF8D005067E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3W6S8FM5ZF;
+				INFOPLIST_FILE = "Gokada ATM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ingroups.mobile.Gokada-ATM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		141CDA4922F8AF8D005067E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3W6S8FM5ZF;
+				INFOPLIST_FILE = "Gokada ATM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ingroups.mobile.Gokada-ATM";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		141CDA4B22F8AF8D005067E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3W6S8FM5ZF;
+				INFOPLIST_FILE = "Gokada ATMTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ingroups.mobile.Gokada-ATMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gokada ATM.app/Gokada ATM";
+			};
+			name = Debug;
+		};
+		141CDA4C22F8AF8D005067E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3W6S8FM5ZF;
+				INFOPLIST_FILE = "Gokada ATMTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ingroups.mobile.Gokada-ATMTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gokada ATM.app/Gokada ATM";
+			};
+			name = Release;
+		};
+		141CDA4E22F8AF8D005067E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3W6S8FM5ZF;
+				INFOPLIST_FILE = "Gokada ATMUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ingroups.mobile.Gokada-ATMUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Gokada ATM";
+			};
+			name = Debug;
+		};
+		141CDA4F22F8AF8D005067E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3W6S8FM5ZF;
+				INFOPLIST_FILE = "Gokada ATMUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ingroups.mobile.Gokada-ATMUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Gokada ATM";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		141CDA1A22F8AF8A005067E5 /* Build configuration list for PBXProject "Gokada ATM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				141CDA4522F8AF8D005067E5 /* Debug */,
+				141CDA4622F8AF8D005067E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		141CDA4722F8AF8D005067E5 /* Build configuration list for PBXNativeTarget "Gokada ATM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				141CDA4822F8AF8D005067E5 /* Debug */,
+				141CDA4922F8AF8D005067E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		141CDA4A22F8AF8D005067E5 /* Build configuration list for PBXNativeTarget "Gokada ATMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				141CDA4B22F8AF8D005067E5 /* Debug */,
+				141CDA4C22F8AF8D005067E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		141CDA4D22F8AF8D005067E5 /* Build configuration list for PBXNativeTarget "Gokada ATMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				141CDA4E22F8AF8D005067E5 /* Debug */,
+				141CDA4F22F8AF8D005067E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 141CDA1722F8AF8A005067E5 /* Project object */;
+}
