@@ -8,12 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		141CDA2322F8AF8A005067E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA2222F8AF8A005067E5 /* AppDelegate.swift */; };
-		141CDA2522F8AF8A005067E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA2422F8AF8A005067E5 /* ViewController.swift */; };
 		141CDA2822F8AF8A005067E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141CDA2622F8AF8A005067E5 /* Main.storyboard */; };
 		141CDA2A22F8AF8D005067E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 141CDA2922F8AF8D005067E5 /* Assets.xcassets */; };
 		141CDA2D22F8AF8D005067E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 141CDA2B22F8AF8D005067E5 /* LaunchScreen.storyboard */; };
 		141CDA3822F8AF8D005067E5 /* Gokada_ATMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA3722F8AF8D005067E5 /* Gokada_ATMTests.swift */; };
 		141CDA4322F8AF8D005067E5 /* Gokada_ATMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA4222F8AF8D005067E5 /* Gokada_ATMUITests.swift */; };
+		141CDA5B22F8CF84005067E5 /* InsertCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA5A22F8CF84005067E5 /* InsertCardViewController.swift */; };
+		141CDA5E22F8D519005067E5 /* PinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA5D22F8D519005067E5 /* PinViewController.swift */; };
+		141CDA6122F8D644005067E5 /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA6022F8D644005067E5 /* PinView.swift */; };
+		141CDA6322F8D655005067E5 /* PinPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA6222F8D655005067E5 /* PinPresenter.swift */; };
+		141CDA6522F8D680005067E5 /* ATMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA6422F8D680005067E5 /* ATMService.swift */; };
+		141CDA6722F8D68F005067E5 /* ATMServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA6622F8D68F005067E5 /* ATMServiceImpl.swift */; };
+		141CDA6922F8D6F6005067E5 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA6822F8D6F6005067E5 /* BaseView.swift */; };
+		141CDA6B22F8D710005067E5 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA6A22F8D710005067E5 /* BasePresenter.swift */; };
+		141CDA6D22F8D751005067E5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA6C22F8D751005067E5 /* BaseViewController.swift */; };
+		141CDA6F22F938A6005067E5 /* AppScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA6E22F938A6005067E5 /* AppScope.swift */; };
+		141CDA7122F938D7005067E5 /* AppModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA7022F938D7005067E5 /* AppModule.swift */; };
+		141CDA7322F93916005067E5 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA7222F93916005067E5 /* AppComponent.swift */; };
+		141CDA7522F93CC2005067E5 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA7422F93CC2005067E5 /* AppConstants.swift */; };
+		141CDA7722F941DA005067E5 /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA7622F941DA005067E5 /* AlertType.swift */; };
+		141CDA7922F94371005067E5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA7822F94371005067E5 /* Extensions.swift */; };
+		141CDA7B22F94951005067E5 /* UIViewWithAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA7A22F94951005067E5 /* UIViewWithAttributes.swift */; };
+		141CDA7D22F94967005067E5 /* ButtonWithAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA7C22F94967005067E5 /* ButtonWithAttributes.swift */; };
+		141CDA7F22F94980005067E5 /* LabelWithAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA7E22F94980005067E5 /* LabelWithAttributes.swift */; };
+		141CDA8122F9499A005067E5 /* TextfieldWithAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA8022F9499A005067E5 /* TextfieldWithAttributes.swift */; };
+		141CDA8322F95D9C005067E5 /* ServiceResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA8222F95D9C005067E5 /* ServiceResult.swift */; };
+		141CDA8522F95DE0005067E5 /* ServiceResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA8422F95DE0005067E5 /* ServiceResultType.swift */; };
+		141CDA8722F9972B005067E5 /* DynamicServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA8622F9972B005067E5 /* DynamicServiceResponse.swift */; };
+		141CDA8922F997E6005067E5 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA8822F997E6005067E5 /* CardData.swift */; };
+		141CDA8B22F9C875005067E5 /* ATMService_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA8A22F9C875005067E5 /* ATMService_Tests.swift */; };
+		141CDA8D22F9CC2C005067E5 /* PinPresenter_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA8C22F9CC2C005067E5 /* PinPresenter_Tests.swift */; };
+		141CDA9122F9D667005067E5 /* MockATMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA9022F9D667005067E5 /* MockATMService.swift */; };
+		141CDA9522F9DAE5005067E5 /* MockPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141CDA9422F9DAE5005067E5 /* MockPinView.swift */; };
+		144BA6CA22FA5F5B00822478 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BA6C922FA5F5B00822478 /* Account.swift */; };
+		144BA6CC22FA5F9D00822478 /* AccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BA6CB22FA5F9D00822478 /* AccountType.swift */; };
+		144BA6CE22FA689A00822478 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BA6CD22FA689A00822478 /* TransactionsViewController.swift */; };
+		144BA6D122FAC24300822478 /* TransactionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BA6D022FAC24300822478 /* TransactionsPresenter.swift */; };
 		1BA423E6AC0EAFE4878CA1AD /* Pods_Gokada_ATMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4290627A9E244F007211B257 /* Pods_Gokada_ATMUITests.framework */; };
 		1C506143A5C37A8E611683ED /* Pods_Gokada_ATMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A67AECE3E3C9326FFDBBB3D /* Pods_Gokada_ATMTests.framework */; };
 		CA0195060EDADB5A512B4D42 /* Pods_Gokada_ATM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11656D3D7274700ACB3D80D4 /* Pods_Gokada_ATM.framework */; };
@@ -40,7 +70,6 @@
 		11656D3D7274700ACB3D80D4 /* Pods_Gokada_ATM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gokada_ATM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		141CDA1F22F8AF8A005067E5 /* Gokada ATM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gokada ATM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		141CDA2222F8AF8A005067E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		141CDA2422F8AF8A005067E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		141CDA2722F8AF8A005067E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		141CDA2922F8AF8D005067E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		141CDA2C22F8AF8D005067E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +80,37 @@
 		141CDA3E22F8AF8D005067E5 /* Gokada ATMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gokada ATMUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		141CDA4222F8AF8D005067E5 /* Gokada_ATMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gokada_ATMUITests.swift; sourceTree = "<group>"; };
 		141CDA4422F8AF8D005067E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		141CDA5A22F8CF84005067E5 /* InsertCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertCardViewController.swift; sourceTree = "<group>"; };
+		141CDA5D22F8D519005067E5 /* PinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinViewController.swift; sourceTree = "<group>"; };
+		141CDA6022F8D644005067E5 /* PinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
+		141CDA6222F8D655005067E5 /* PinPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinPresenter.swift; sourceTree = "<group>"; };
+		141CDA6422F8D680005067E5 /* ATMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMService.swift; sourceTree = "<group>"; };
+		141CDA6622F8D68F005067E5 /* ATMServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMServiceImpl.swift; sourceTree = "<group>"; };
+		141CDA6822F8D6F6005067E5 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		141CDA6A22F8D710005067E5 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		141CDA6C22F8D751005067E5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		141CDA6E22F938A6005067E5 /* AppScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScope.swift; sourceTree = "<group>"; };
+		141CDA7022F938D7005067E5 /* AppModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModule.swift; sourceTree = "<group>"; };
+		141CDA7222F93916005067E5 /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		141CDA7422F93CC2005067E5 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		141CDA7622F941DA005067E5 /* AlertType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
+		141CDA7822F94371005067E5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		141CDA7A22F94951005067E5 /* UIViewWithAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewWithAttributes.swift; sourceTree = "<group>"; };
+		141CDA7C22F94967005067E5 /* ButtonWithAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithAttributes.swift; sourceTree = "<group>"; };
+		141CDA7E22F94980005067E5 /* LabelWithAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelWithAttributes.swift; sourceTree = "<group>"; };
+		141CDA8022F9499A005067E5 /* TextfieldWithAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldWithAttributes.swift; sourceTree = "<group>"; };
+		141CDA8222F95D9C005067E5 /* ServiceResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResult.swift; sourceTree = "<group>"; };
+		141CDA8422F95DE0005067E5 /* ServiceResultType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceResultType.swift; sourceTree = "<group>"; };
+		141CDA8622F9972B005067E5 /* DynamicServiceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicServiceResponse.swift; sourceTree = "<group>"; };
+		141CDA8822F997E6005067E5 /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
+		141CDA8A22F9C875005067E5 /* ATMService_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMService_Tests.swift; sourceTree = "<group>"; };
+		141CDA8C22F9CC2C005067E5 /* PinPresenter_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinPresenter_Tests.swift; sourceTree = "<group>"; };
+		141CDA9022F9D667005067E5 /* MockATMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockATMService.swift; sourceTree = "<group>"; };
+		141CDA9422F9DAE5005067E5 /* MockPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPinView.swift; sourceTree = "<group>"; };
+		144BA6C922FA5F5B00822478 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		144BA6CB22FA5F9D00822478 /* AccountType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountType.swift; sourceTree = "<group>"; };
+		144BA6CD22FA689A00822478 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		144BA6D022FAC24300822478 /* TransactionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsPresenter.swift; sourceTree = "<group>"; };
 		1A67AECE3E3C9326FFDBBB3D /* Pods_Gokada_ATMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gokada_ATMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		208A73400A94833FBBC8D274 /* Pods-Gokada ATM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada ATM.release.xcconfig"; path = "Target Support Files/Pods-Gokada ATM/Pods-Gokada ATM.release.xcconfig"; sourceTree = "<group>"; };
 		3FBA025893BE558AD20718E2 /* Pods-Gokada ATMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada ATMUITests.release.xcconfig"; path = "Target Support Files/Pods-Gokada ATMUITests/Pods-Gokada ATMUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +185,8 @@
 		141CDA3622F8AF8D005067E5 /* Gokada ATMTests */ = {
 			isa = PBXGroup;
 			children = (
+				141CDA8F22F9D3B9005067E5 /* Pin */,
+				141CDA8E22F9D3AA005067E5 /* Service */,
 				141CDA3722F8AF8D005067E5 /* Gokada_ATMTests.swift */,
 				141CDA3922F8AF8D005067E5 /* Info.plist */,
 			);
@@ -143,6 +205,11 @@
 		141CDA5022F8B01A005067E5 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				141CDA5822F8B939005067E5 /* Models */,
+				141CDA5722F8B90B005067E5 /* Service */,
+				141CDA5622F8B8F3005067E5 /* Utilities */,
+				141CDA5522F8B8EC005067E5 /* DI */,
+				141CDA5422F8B8E4005067E5 /* MVP */,
 				141CDA2222F8AF8A005067E5 /* AppDelegate.swift */,
 			);
 			path = Base;
@@ -151,7 +218,9 @@
 		141CDA5122F8B029005067E5 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				141CDA2422F8AF8A005067E5 /* ViewController.swift */,
+				144BA6C822FA5E5900822478 /* Transactions */,
+				141CDA5C22F8D475005067E5 /* Pin */,
+				141CDA5922F8CD29005067E5 /* Insert Card */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -172,6 +241,123 @@
 				141CDA2E22F8AF8D005067E5 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		141CDA5422F8B8E4005067E5 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				141CDA6822F8D6F6005067E5 /* BaseView.swift */,
+				141CDA6A22F8D710005067E5 /* BasePresenter.swift */,
+				141CDA6C22F8D751005067E5 /* BaseViewController.swift */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		141CDA5522F8B8EC005067E5 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				141CDA6E22F938A6005067E5 /* AppScope.swift */,
+				141CDA7022F938D7005067E5 /* AppModule.swift */,
+				141CDA7222F93916005067E5 /* AppComponent.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		141CDA5622F8B8F3005067E5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				141CDA7422F93CC2005067E5 /* AppConstants.swift */,
+				141CDA7822F94371005067E5 /* Extensions.swift */,
+				141CDA7A22F94951005067E5 /* UIViewWithAttributes.swift */,
+				141CDA7C22F94967005067E5 /* ButtonWithAttributes.swift */,
+				141CDA7E22F94980005067E5 /* LabelWithAttributes.swift */,
+				141CDA8022F9499A005067E5 /* TextfieldWithAttributes.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		141CDA5722F8B90B005067E5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				141CDA6422F8D680005067E5 /* ATMService.swift */,
+				141CDA6622F8D68F005067E5 /* ATMServiceImpl.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		141CDA5822F8B939005067E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				141CDA7622F941DA005067E5 /* AlertType.swift */,
+				141CDA8222F95D9C005067E5 /* ServiceResult.swift */,
+				141CDA8422F95DE0005067E5 /* ServiceResultType.swift */,
+				141CDA8622F9972B005067E5 /* DynamicServiceResponse.swift */,
+				141CDA8822F997E6005067E5 /* CardData.swift */,
+				144BA6C922FA5F5B00822478 /* Account.swift */,
+				144BA6CB22FA5F9D00822478 /* AccountType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		141CDA5922F8CD29005067E5 /* Insert Card */ = {
+			isa = PBXGroup;
+			children = (
+				141CDA5A22F8CF84005067E5 /* InsertCardViewController.swift */,
+			);
+			path = "Insert Card";
+			sourceTree = "<group>";
+		};
+		141CDA5C22F8D475005067E5 /* Pin */ = {
+			isa = PBXGroup;
+			children = (
+				141CDA5F22F8D62E005067E5 /* MVP */,
+				141CDA5D22F8D519005067E5 /* PinViewController.swift */,
+			);
+			path = Pin;
+			sourceTree = "<group>";
+		};
+		141CDA5F22F8D62E005067E5 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				141CDA6022F8D644005067E5 /* PinView.swift */,
+				141CDA6222F8D655005067E5 /* PinPresenter.swift */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		141CDA8E22F9D3AA005067E5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				141CDA8A22F9C875005067E5 /* ATMService_Tests.swift */,
+				141CDA9022F9D667005067E5 /* MockATMService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		141CDA8F22F9D3B9005067E5 /* Pin */ = {
+			isa = PBXGroup;
+			children = (
+				141CDA8C22F9CC2C005067E5 /* PinPresenter_Tests.swift */,
+				141CDA9422F9DAE5005067E5 /* MockPinView.swift */,
+			);
+			path = Pin;
+			sourceTree = "<group>";
+		};
+		144BA6C822FA5E5900822478 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				144BA6CF22FAC22800822478 /* MVP */,
+				144BA6CD22FA689A00822478 /* TransactionsViewController.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		144BA6CF22FAC22800822478 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				144BA6D022FAC24300822478 /* TransactionsPresenter.swift */,
+			);
+			path = MVP;
 			sourceTree = "<group>";
 		};
 		CA3909E0F11C3EEF89471404 /* Frameworks */ = {
@@ -227,6 +413,7 @@
 				141CDA2F22F8AF8D005067E5 /* Sources */,
 				141CDA3022F8AF8D005067E5 /* Frameworks */,
 				141CDA3122F8AF8D005067E5 /* Resources */,
+				EBA6D26CB76F5ED93522ACC8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -394,6 +581,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EBA6D26CB76F5ED93522ACC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gokada ATMTests/Pods-Gokada ATMTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Gokada ATMTests/Pods-Gokada ATMTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Gokada ATMTests/Pods-Gokada ATMTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FA7E2724F16E4DC910408DEF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -418,8 +622,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				141CDA2522F8AF8A005067E5 /* ViewController.swift in Sources */,
+				141CDA7D22F94967005067E5 /* ButtonWithAttributes.swift in Sources */,
+				141CDA6F22F938A6005067E5 /* AppScope.swift in Sources */,
+				144BA6CE22FA689A00822478 /* TransactionsViewController.swift in Sources */,
+				141CDA8322F95D9C005067E5 /* ServiceResult.swift in Sources */,
+				144BA6CC22FA5F9D00822478 /* AccountType.swift in Sources */,
+				141CDA7F22F94980005067E5 /* LabelWithAttributes.swift in Sources */,
+				141CDA6322F8D655005067E5 /* PinPresenter.swift in Sources */,
+				141CDA6B22F8D710005067E5 /* BasePresenter.swift in Sources */,
+				141CDA5B22F8CF84005067E5 /* InsertCardViewController.swift in Sources */,
+				141CDA6522F8D680005067E5 /* ATMService.swift in Sources */,
+				141CDA7122F938D7005067E5 /* AppModule.swift in Sources */,
+				144BA6D122FAC24300822478 /* TransactionsPresenter.swift in Sources */,
 				141CDA2322F8AF8A005067E5 /* AppDelegate.swift in Sources */,
+				141CDA6D22F8D751005067E5 /* BaseViewController.swift in Sources */,
+				141CDA6122F8D644005067E5 /* PinView.swift in Sources */,
+				141CDA8522F95DE0005067E5 /* ServiceResultType.swift in Sources */,
+				141CDA7B22F94951005067E5 /* UIViewWithAttributes.swift in Sources */,
+				141CDA6722F8D68F005067E5 /* ATMServiceImpl.swift in Sources */,
+				141CDA5E22F8D519005067E5 /* PinViewController.swift in Sources */,
+				141CDA7922F94371005067E5 /* Extensions.swift in Sources */,
+				141CDA7722F941DA005067E5 /* AlertType.swift in Sources */,
+				141CDA8122F9499A005067E5 /* TextfieldWithAttributes.swift in Sources */,
+				141CDA7522F93CC2005067E5 /* AppConstants.swift in Sources */,
+				144BA6CA22FA5F5B00822478 /* Account.swift in Sources */,
+				141CDA7322F93916005067E5 /* AppComponent.swift in Sources */,
+				141CDA8922F997E6005067E5 /* CardData.swift in Sources */,
+				141CDA8722F9972B005067E5 /* DynamicServiceResponse.swift in Sources */,
+				141CDA6922F8D6F6005067E5 /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +657,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				141CDA9522F9DAE5005067E5 /* MockPinView.swift in Sources */,
+				141CDA8D22F9CC2C005067E5 /* PinPresenter_Tests.swift in Sources */,
+				141CDA8B22F9C875005067E5 /* ATMService_Tests.swift in Sources */,
+				141CDA9122F9D667005067E5 /* MockATMService.swift in Sources */,
 				141CDA3822F8AF8D005067E5 /* Gokada_ATMTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,7 +831,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3W6S8FM5ZF;
-				INFOPLIST_FILE = "Gokada ATM/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Gokada ATM/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -616,7 +850,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3W6S8FM5ZF;
-				INFOPLIST_FILE = "Gokada ATM/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Gokada ATM/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

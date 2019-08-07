@@ -1,0 +1,6 @@
+framework module Pods_Gokada_ATMTests {
+  umbrella header "Pods-Gokada ATMTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

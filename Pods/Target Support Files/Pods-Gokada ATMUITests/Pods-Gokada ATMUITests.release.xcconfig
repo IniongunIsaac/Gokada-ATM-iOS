@@ -1,0 +1,8 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alertift" "${PODS_CONFIGURATION_BUILD_DIR}/ChameleonFramework" "${PODS_CONFIGURATION_BUILD_DIR}/Cleanse" "${PODS_CONFIGURATION_BUILD_DIR}/DynamicBlurView" "${PODS_CONFIGURATION_BUILD_DIR}/Fakery" "${PODS_CONFIGURATION_BUILD_DIR}/PaddingLabel" "${PODS_CONFIGURATION_BUILD_DIR}/PopupDialog" "${PODS_CONFIGURATION_BUILD_DIR}/ProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/Toast"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Alertift/Alertift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ChameleonFramework/ChameleonFramework.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Cleanse/Cleanse.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/DynamicBlurView/DynamicBlurView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Fakery/Fakery.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PaddingLabel/PaddingLabel.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PopupDialog/PopupDialog.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ProgressHUD/ProgressHUD.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Toast/Toast.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "Accelerate" -framework "Alertift" -framework "ChameleonFramework" -framework "Cleanse" -framework "CoreGraphics" -framework "DynamicBlurView" -framework "Fakery" -framework "Foundation" -framework "PaddingLabel" -framework "PopupDialog" -framework "ProgressHUD" -framework "QuartzCore" -framework "Toast" -framework "UIKit"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

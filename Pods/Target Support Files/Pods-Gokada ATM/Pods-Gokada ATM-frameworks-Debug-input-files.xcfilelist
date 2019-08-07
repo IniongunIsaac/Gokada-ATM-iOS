@@ -1,0 +1,10 @@
+${PODS_ROOT}/Target Support Files/Pods-Gokada ATM/Pods-Gokada ATM-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alertift/Alertift.framework
+${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework
+${BUILT_PRODUCTS_DIR}/Cleanse/Cleanse.framework
+${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework
+${BUILT_PRODUCTS_DIR}/Fakery/Fakery.framework
+${BUILT_PRODUCTS_DIR}/PaddingLabel/PaddingLabel.framework
+${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework
+${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/Toast/Toast.framework
