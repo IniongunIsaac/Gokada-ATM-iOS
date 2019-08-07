@@ -30,25 +30,8 @@ class MockATMService: ATMService {
                              data: nil)
     }
     
-    fileprivate func getLinkedAccounts(numberOfAccounts: Int) -> [Account] {
-        var accounts = [Account]()
-        
-        for _ in 0..<numberOfAccounts {
-            accounts.append(Account(type: getAccountType(Int.random(in: 1...3)), number: generateRandomDigits(11), balance: faker.number.randomFloat(min: 1000.0000, max: 100000.9999)))
-        }
-        
-        return accounts
-    }
-    
-    fileprivate func getAccountType(_ random: Int) -> AccountType {
-        switch random {
-        case 2:
-            return .debit
-        case 3:
-            return .credit
-        default:
-            return .savings
-        }
+    func validatePin(cardPin: String) -> Bool {
+        return cardPin.compare(AppConstants.ATM_CARD_PIN) == .orderedSame
     }
 
 }

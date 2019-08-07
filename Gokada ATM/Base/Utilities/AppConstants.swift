@@ -23,4 +23,7 @@ struct AppConstants {
     //Configure maximum number of times the user can attempt to login using the wrong PIN
     static let MAX_LOGIN_FAILURE_ATTEMPTS = 3
     
+    //Failure after three tries error message
+    static let PIN_FAILURE_MESSAGE = "You have exhausted the number of times you can attempt to login using the wrong PIN.\nAs a result, your Card has been siezed.\nPlease contact your bank for retrieval."
+    
 }

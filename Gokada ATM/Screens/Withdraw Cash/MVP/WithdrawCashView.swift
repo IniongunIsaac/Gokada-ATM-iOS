@@ -1,5 +1,5 @@
 //
-//  Account.swift
+//  WithdrawCashView.swift
 //  Gokada ATM
 //
 //  Created by Isaac Iniongun on 07/08/2019.
@@ -8,8 +8,6 @@
 
 import Foundation
 
-struct Account: DynamicServiceResponse {
-    var type: AccountType
-    var number: String
-    var balance: Float
+protocol WithdrawCashView: BaseView {
+    func navigateToTransactionReceipt(transactionReceipt: TransactionReceipt)
 }

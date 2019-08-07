@@ -39,7 +39,7 @@ class PinPresenter: BasePresenter {
         }
         //ensure that the user stays within the AppConstants.MAX_LOGIN_FAILURE_ATTEMPTS number of login attempts
         else if loginFailureAttempts >= AppConstants.MAX_LOGIN_FAILURE_ATTEMPTS {
-            view.showFailureAlert(with: "You have exhausted the number of times you can attempt to login using the wrong PIN.\nAs a result, your Card has been siezed.\nPlease contact your bank for retrieval.") {
+            view.showFailureAlert(with: AppConstants.PIN_FAILURE_MESSAGE) {
                 self.view.dismissVC()
             }
         } else {

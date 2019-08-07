@@ -11,6 +11,7 @@ import ProgressHUD
 import Toast
 import Alertift
 import ChameleonFramework
+import PopupDialog
 
 class BaseViewController: UIViewController, BaseView {
     
@@ -184,7 +185,7 @@ class BaseViewController: UIViewController, BaseView {
         self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
     }
     
-    func showActionSheet(forActions: [String], message: String, handler: @escaping (UIAlertAction, Int) -> Void){
+    func showActionSheet(forActions: [String], message: String, handler: @escaping (UIAlertAction, Int) -> Void) {
         Alertift.actionSheet(title: message, anchorView: self.view)
             .actions(forActions)
             .action(.cancel("Dismiss"))
@@ -197,6 +198,21 @@ class BaseViewController: UIViewController, BaseView {
             }.show(on: self)
     }
     
+    func showPinConfirmationAlert(handler: @escaping (String) -> Void) {
+        Alertift.alert(title: "Confirm PIN", message: "Please enter your ATM card PIN for confirmation.")
+            .textField { textField in
+                textField.placeholder = "Enter PIN"
+                textField.isSecureTextEntry = true
+                textField.keyboardType = .numberPad
+                textField.delegate = self
+            }
+            .action(.cancel("Cancel"))
+            .action(.default("Confirm")) { _, _, textFields in
+                handler(textFields?.first?.text ?? "")
+            }
+            .show(on: self)
+    }
+    
     //Change navigation bar back button text to the value of `backButtonText` or `Back` by default
     func configureNavigationBarBackButton(backButtonText: String = "Back") {
         let backItem = UIBarButtonItem()
@@ -205,7 +221,46 @@ class BaseViewController: UIViewController, BaseView {
     }
     
     func dismissVC() {
-        dismiss(animated: true, completion: nil)
+        //dismiss(animated: true, completion: nil)
+        self.navigationController?.viewControllers.removeLast()
+    }
+    
+    func showTransactionInProgressDialog(dismissAction: @escaping () -> Void) -> PopupDialog? {
+        
+        let transactionDialogVC = TransactionInProgressDialogViewController(nibName: "TransactionInProgressDialogViewController", bundle: nil)
+        
+        let popup = PopupDialog(viewController: transactionDialogVC, buttonAlignment: .horizontal, transitionStyle: .fadeIn, tapGestureDismissal: false, panGestureDismissal: false) {
+            //Handle what happens when dialog is dismissed
+            dismissAction()
+        }
+        
+        //Customize Cancel Button
+        CancelButton.appearance().titleColor = FlatRed()
+        
+        //Cancel Button
+        let cancelButton = CancelButton(title: "Cancel", height: 60, dismissOnTap: true) {
+            popup.dismiss()
+            self.dismissVC()
+        }
+        
+        //Add cancel button to dialog
+        popup.addButton(cancelButton)
+        
+        present(popup, animated: true, completion: nil)
+        
+        return popup
     }
 
+}
+
+//MARK: - UITextFieldDelegate Protocol
+extension BaseViewController: UITextFieldDelegate {
+    //Limit number of characters for textfield to 4
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let maxLength = 4
+        let currentString: NSString = textField.text! as NSString
+        let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
+        return newString.length <= maxLength
+    }
+    
 }

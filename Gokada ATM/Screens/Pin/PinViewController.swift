@@ -56,14 +56,14 @@ extension PinViewController: PinView {
     
 }
 
-//MARK: - UITextFieldDelegate Protocol
-extension PinViewController: UITextFieldDelegate {
-    //Limit number of characters for textfield to 4
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let maxLength = 4
-        let currentString: NSString = textField.text! as NSString
-        let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
-        return newString.length <= maxLength
-    }
-    
-}
+////MARK: - UITextFieldDelegate Protocol
+//extension PinViewController: UITextFieldDelegate {
+//    //Limit number of characters for textfield to 4
+//    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+//        let maxLength = 4
+//        let currentString: NSString = textField.text! as NSString
+//        let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
+//        return newString.length <= maxLength
+//    }
+//
+//}

@@ -60,7 +60,7 @@ class PinPresenter_Tests: XCTestCase {
         }
     }
     
-    func test_validatePin_callsDismissToRootViewControllerOnView_givenWrongCardCredentials() {
+    func test_validatePin_callsDismissVCOnView_givenWrongCardCredentials() {
         testCardNumber = "0987654321"
         testCardPin = "4321"
         presenter.validatePin(cardNo: testCardNumber, pin: testCardPin)

@@ -84,3 +84,46 @@ func generateRandomDigits(_ digitNumber: Int) -> String {
     }
     return number
 }
+
+//Generate random accounts to be linked to card
+func getLinkedAccounts(numberOfAccounts: Int) -> [Account] {
+    var accounts = [Account]()
+    
+    for _ in 0..<numberOfAccounts {
+        accounts.append(Account(type: getAccountType(Int.random(in: 1...3)), number: generateRandomDigits(10), balance: faker.number.randomFloat(min: 1000.0000, max: 100000.9999)))
+    }
+    
+    return accounts
+}
+
+//Get a random account type
+fileprivate func getAccountType(_ random: Int) -> AccountType {
+    switch random {
+    case 2:
+        return .debit
+    case 3:
+        return .credit
+    default:
+        return .savings
+    }
+}
+
+//Determine whether or not an amount is a multiple of 500 or 1000
+func isMultipleOf500Or1000(number: Float) -> Bool {
+    return (floor(number/500.00) == number/500.00) || (floor(number/1000.00) == number/1000.00)
+}
+
+//Get Current DateTime using a certain format string
+func getCurrentDateTime(format: String = "yyyy-MM-dd HH:mm:ss") -> String {
+    
+    let dateFormatter : DateFormatter = DateFormatter()
+    dateFormatter.dateFormat = format
+    let date = Date()
+    
+    return dateFormatter.string(from: date)
+}
+
+//Get any random address
+func getRandomAddress() -> String {
+    return faker.address.streetAddress(includeSecondary: true) + ", " + faker.address.city() + ", " + faker.address.state() + ", " + faker.address.country()
+}

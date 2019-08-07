@@ -13,31 +13,33 @@ class ATMServiceImpl: ATMService {
     func validateCardCredentials(cardNumber: String, cardPin: String) -> ServiceResult {
         
         if cardNumber.compare(AppConstants.BANK_CARD_NUMBER) == .orderedSame && cardPin.compare(AppConstants.ATM_CARD_PIN) == .orderedSame {
-            return ServiceResult(code: 200, resultType: .success, messageDescription: "Valid Card Credentials.", data: CardData(name: faker.name.name(), phoneNo: faker.phoneNumber.phoneNumber(), address: faker.address.streetAddress(includeSecondary: true) + ", " + faker.address.city() + ", " + faker.address.state() + ", " + faker.address.country(), linkedAccounts: getLinkedAccounts(numberOfAccounts: Int.random(in: 1...3))))
+            return ServiceResult(code: 200, resultType: .success, messageDescription: "Valid Card Credentials.", data: CardData(name: faker.name.name(), phoneNo: faker.phoneNumber.phoneNumber(), address: getRandomAddress(), linkedAccounts: getLinkedAccounts(numberOfAccounts: Int.random(in: 1...3))))
         }
         
         return ServiceResult(code: 400, resultType: .failure, messageDescription: "Invalid Card Credentials.",
                              data: nil)
     }
     
-    fileprivate func getLinkedAccounts(numberOfAccounts: Int) -> [Account] {
-        var accounts = [Account]()
-        
-        for _ in 0..<numberOfAccounts {
-            accounts.append(Account(type: getAccountType(Int.random(in: 1...3)), number: generateRandomDigits(11), balance: faker.number.randomFloat(min: 1000.0000, max: 100000.9999)))
-        }
-        
-        return accounts
+    func validatePin(cardPin: String) -> Bool {
+        return cardPin.compare(AppConstants.ATM_CARD_PIN) == .orderedSame
     }
     
-    fileprivate func getAccountType(_ random: Int) -> AccountType {
-        switch random {
-        case 2:
-            return .debit
-        case 3:
-            return .credit
-        default:
-            return .savings
+    func withdrawCash(amount: String, account: Account) -> ServiceResult {
+        
+        let floatAmount = Float(amount)!
+        
+        if isMultipleOf500Or1000(number: floatAmount) {
+            //Obtain approval from bank before cash is dispensed to user.
+            //We assume here that all account can maintain a zero balance.
+            if (account.balance - floatAmount) > 0.0 {
+                return ServiceResult(code: 200, resultType: .success, messageDescription: "Transaction Approved. Please take your cash!", data: Account(type: account.type, number: account.number, balance: account.balance - floatAmount))
+            } else {
+                return ServiceResult(code: 400, resultType: .failure, messageDescription: "Transaction not approved, insufficient balance.", data: nil)
+            }
         }
+        
+        return ServiceResult(code: 400, resultType: .failure, messageDescription: "Please ensure the amount entered is a multiple of 500 or 1000.", data: nil)
+        
     }
+    
 }

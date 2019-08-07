@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Alertift
+import PopupDialog
 
 protocol BaseView {
     
@@ -51,5 +53,11 @@ protocol BaseView {
     func dismissToRootViewController()
     
     func dismissVC()
+    
+    func showActionSheet(forActions: [String], message: String, handler: @escaping (UIAlertAction, Int) -> Void)
+    
+    func showPinConfirmationAlert(handler: @escaping (String) -> Void)
+    
+    func showTransactionInProgressDialog(dismissAction: @escaping () -> Void) -> PopupDialog?
     
 }

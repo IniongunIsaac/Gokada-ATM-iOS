@@ -44,6 +44,18 @@
 		144BA6CC22FA5F9D00822478 /* AccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BA6CB22FA5F9D00822478 /* AccountType.swift */; };
 		144BA6CE22FA689A00822478 /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BA6CD22FA689A00822478 /* TransactionsViewController.swift */; };
 		144BA6D122FAC24300822478 /* TransactionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BA6D022FAC24300822478 /* TransactionsPresenter.swift */; };
+		144BA6D322FAC2DC00822478 /* TransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BA6D222FAC2DC00822478 /* TransactionType.swift */; };
+		144BA6D522FAC47D00822478 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BA6D422FAC47D00822478 /* TransactionsView.swift */; };
+		144BA6DA22FADC7300822478 /* WithdrawCashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BA6D922FADC7300822478 /* WithdrawCashViewController.swift */; };
+		144BA6DC22FADC8900822478 /* AirtimeTopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BA6DB22FADC8900822478 /* AirtimeTopupViewController.swift */; };
+		144BA6DE22FADC9E00822478 /* TransactionReceiptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BA6DD22FADC9E00822478 /* TransactionReceiptViewController.swift */; };
+		144BA6E122FAE19900822478 /* MockTransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144BA6E022FAE19900822478 /* MockTransactionsView.swift */; };
+		14974AB722FAF2E1009D7DA7 /* WithdrawCashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14974AB622FAF2E1009D7DA7 /* WithdrawCashPresenter.swift */; };
+		14974AB922FAF31A009D7DA7 /* WithdrawCashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14974AB822FAF31A009D7DA7 /* WithdrawCashView.swift */; };
+		14974ABD22FB0725009D7DA7 /* TransactionInProgressDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14974ABB22FB0725009D7DA7 /* TransactionInProgressDialogViewController.swift */; };
+		14974ABE22FB0725009D7DA7 /* TransactionInProgressDialogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14974ABC22FB0725009D7DA7 /* TransactionInProgressDialogViewController.xib */; };
+		14974AC022FB26A2009D7DA7 /* TransactionReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14974ABF22FB26A2009D7DA7 /* TransactionReceipt.swift */; };
+		14A6B4D722FAE6190091CDA8 /* TransactionsPresenter_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6B4D622FAE6190091CDA8 /* TransactionsPresenter_Tests.swift */; };
 		1BA423E6AC0EAFE4878CA1AD /* Pods_Gokada_ATMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4290627A9E244F007211B257 /* Pods_Gokada_ATMUITests.framework */; };
 		1C506143A5C37A8E611683ED /* Pods_Gokada_ATMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A67AECE3E3C9326FFDBBB3D /* Pods_Gokada_ATMTests.framework */; };
 		CA0195060EDADB5A512B4D42 /* Pods_Gokada_ATM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11656D3D7274700ACB3D80D4 /* Pods_Gokada_ATM.framework */; };
@@ -111,6 +123,18 @@
 		144BA6CB22FA5F9D00822478 /* AccountType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountType.swift; sourceTree = "<group>"; };
 		144BA6CD22FA689A00822478 /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
 		144BA6D022FAC24300822478 /* TransactionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsPresenter.swift; sourceTree = "<group>"; };
+		144BA6D222FAC2DC00822478 /* TransactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionType.swift; sourceTree = "<group>"; };
+		144BA6D422FAC47D00822478 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		144BA6D922FADC7300822478 /* WithdrawCashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawCashViewController.swift; sourceTree = "<group>"; };
+		144BA6DB22FADC8900822478 /* AirtimeTopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtimeTopupViewController.swift; sourceTree = "<group>"; };
+		144BA6DD22FADC9E00822478 /* TransactionReceiptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionReceiptViewController.swift; sourceTree = "<group>"; };
+		144BA6E022FAE19900822478 /* MockTransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTransactionsView.swift; sourceTree = "<group>"; };
+		14974AB622FAF2E1009D7DA7 /* WithdrawCashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawCashPresenter.swift; sourceTree = "<group>"; };
+		14974AB822FAF31A009D7DA7 /* WithdrawCashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawCashView.swift; sourceTree = "<group>"; };
+		14974ABB22FB0725009D7DA7 /* TransactionInProgressDialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionInProgressDialogViewController.swift; sourceTree = "<group>"; };
+		14974ABC22FB0725009D7DA7 /* TransactionInProgressDialogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionInProgressDialogViewController.xib; sourceTree = "<group>"; };
+		14974ABF22FB26A2009D7DA7 /* TransactionReceipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionReceipt.swift; sourceTree = "<group>"; };
+		14A6B4D622FAE6190091CDA8 /* TransactionsPresenter_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsPresenter_Tests.swift; sourceTree = "<group>"; };
 		1A67AECE3E3C9326FFDBBB3D /* Pods_Gokada_ATMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gokada_ATMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		208A73400A94833FBBC8D274 /* Pods-Gokada ATM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada ATM.release.xcconfig"; path = "Target Support Files/Pods-Gokada ATM/Pods-Gokada ATM.release.xcconfig"; sourceTree = "<group>"; };
 		3FBA025893BE558AD20718E2 /* Pods-Gokada ATMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada ATMUITests.release.xcconfig"; path = "Target Support Files/Pods-Gokada ATMUITests/Pods-Gokada ATMUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -185,6 +209,7 @@
 		141CDA3622F8AF8D005067E5 /* Gokada ATMTests */ = {
 			isa = PBXGroup;
 			children = (
+				144BA6DF22FAE17A00822478 /* Transactions */,
 				141CDA8F22F9D3B9005067E5 /* Pin */,
 				141CDA8E22F9D3AA005067E5 /* Service */,
 				141CDA3722F8AF8D005067E5 /* Gokada_ATMTests.swift */,
@@ -218,6 +243,10 @@
 		141CDA5122F8B029005067E5 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				14974ABA22FB06CC009D7DA7 /* Transaction Progress */,
+				144BA6D822FADC4500822478 /* Transaction Receipt */,
+				144BA6D722FADC3400822478 /* Airtime Topup */,
+				144BA6D622FADC1D00822478 /* Withdraw Cash */,
 				144BA6C822FA5E5900822478 /* Transactions */,
 				141CDA5C22F8D475005067E5 /* Pin */,
 				141CDA5922F8CD29005067E5 /* Insert Card */,
@@ -295,6 +324,8 @@
 				141CDA8822F997E6005067E5 /* CardData.swift */,
 				144BA6C922FA5F5B00822478 /* Account.swift */,
 				144BA6CB22FA5F9D00822478 /* AccountType.swift */,
+				144BA6D222FAC2DC00822478 /* TransactionType.swift */,
+				14974ABF22FB26A2009D7DA7 /* TransactionReceipt.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -356,8 +387,61 @@
 			isa = PBXGroup;
 			children = (
 				144BA6D022FAC24300822478 /* TransactionsPresenter.swift */,
+				144BA6D422FAC47D00822478 /* TransactionsView.swift */,
 			);
 			path = MVP;
+			sourceTree = "<group>";
+		};
+		144BA6D622FADC1D00822478 /* Withdraw Cash */ = {
+			isa = PBXGroup;
+			children = (
+				14974AB522FAF2B5009D7DA7 /* MVP */,
+				144BA6D922FADC7300822478 /* WithdrawCashViewController.swift */,
+			);
+			path = "Withdraw Cash";
+			sourceTree = "<group>";
+		};
+		144BA6D722FADC3400822478 /* Airtime Topup */ = {
+			isa = PBXGroup;
+			children = (
+				144BA6DB22FADC8900822478 /* AirtimeTopupViewController.swift */,
+			);
+			path = "Airtime Topup";
+			sourceTree = "<group>";
+		};
+		144BA6D822FADC4500822478 /* Transaction Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				144BA6DD22FADC9E00822478 /* TransactionReceiptViewController.swift */,
+			);
+			path = "Transaction Receipt";
+			sourceTree = "<group>";
+		};
+		144BA6DF22FAE17A00822478 /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				144BA6E022FAE19900822478 /* MockTransactionsView.swift */,
+				14A6B4D622FAE6190091CDA8 /* TransactionsPresenter_Tests.swift */,
+			);
+			path = Transactions;
+			sourceTree = "<group>";
+		};
+		14974AB522FAF2B5009D7DA7 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				14974AB622FAF2E1009D7DA7 /* WithdrawCashPresenter.swift */,
+				14974AB822FAF31A009D7DA7 /* WithdrawCashView.swift */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		14974ABA22FB06CC009D7DA7 /* Transaction Progress */ = {
+			isa = PBXGroup;
+			children = (
+				14974ABB22FB0725009D7DA7 /* TransactionInProgressDialogViewController.swift */,
+				14974ABC22FB0725009D7DA7 /* TransactionInProgressDialogViewController.xib */,
+			);
+			path = "Transaction Progress";
 			sourceTree = "<group>";
 		};
 		CA3909E0F11C3EEF89471404 /* Frameworks */ = {
@@ -495,6 +579,7 @@
 				141CDA2D22F8AF8D005067E5 /* LaunchScreen.storyboard in Resources */,
 				141CDA2A22F8AF8D005067E5 /* Assets.xcassets in Resources */,
 				141CDA2822F8AF8A005067E5 /* Main.storyboard in Resources */,
+				14974ABE22FB0725009D7DA7 /* TransactionInProgressDialogViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,15 +711,21 @@
 				141CDA6F22F938A6005067E5 /* AppScope.swift in Sources */,
 				144BA6CE22FA689A00822478 /* TransactionsViewController.swift in Sources */,
 				141CDA8322F95D9C005067E5 /* ServiceResult.swift in Sources */,
+				144BA6DA22FADC7300822478 /* WithdrawCashViewController.swift in Sources */,
+				14974AC022FB26A2009D7DA7 /* TransactionReceipt.swift in Sources */,
 				144BA6CC22FA5F9D00822478 /* AccountType.swift in Sources */,
+				144BA6D522FAC47D00822478 /* TransactionsView.swift in Sources */,
+				14974ABD22FB0725009D7DA7 /* TransactionInProgressDialogViewController.swift in Sources */,
 				141CDA7F22F94980005067E5 /* LabelWithAttributes.swift in Sources */,
 				141CDA6322F8D655005067E5 /* PinPresenter.swift in Sources */,
+				14974AB922FAF31A009D7DA7 /* WithdrawCashView.swift in Sources */,
 				141CDA6B22F8D710005067E5 /* BasePresenter.swift in Sources */,
 				141CDA5B22F8CF84005067E5 /* InsertCardViewController.swift in Sources */,
 				141CDA6522F8D680005067E5 /* ATMService.swift in Sources */,
 				141CDA7122F938D7005067E5 /* AppModule.swift in Sources */,
 				144BA6D122FAC24300822478 /* TransactionsPresenter.swift in Sources */,
 				141CDA2322F8AF8A005067E5 /* AppDelegate.swift in Sources */,
+				144BA6D322FAC2DC00822478 /* TransactionType.swift in Sources */,
 				141CDA6D22F8D751005067E5 /* BaseViewController.swift in Sources */,
 				141CDA6122F8D644005067E5 /* PinView.swift in Sources */,
 				141CDA8522F95DE0005067E5 /* ServiceResultType.swift in Sources */,
@@ -645,9 +736,12 @@
 				141CDA7722F941DA005067E5 /* AlertType.swift in Sources */,
 				141CDA8122F9499A005067E5 /* TextfieldWithAttributes.swift in Sources */,
 				141CDA7522F93CC2005067E5 /* AppConstants.swift in Sources */,
+				144BA6DC22FADC8900822478 /* AirtimeTopupViewController.swift in Sources */,
 				144BA6CA22FA5F5B00822478 /* Account.swift in Sources */,
 				141CDA7322F93916005067E5 /* AppComponent.swift in Sources */,
+				14974AB722FAF2E1009D7DA7 /* WithdrawCashPresenter.swift in Sources */,
 				141CDA8922F997E6005067E5 /* CardData.swift in Sources */,
+				144BA6DE22FADC9E00822478 /* TransactionReceiptViewController.swift in Sources */,
 				141CDA8722F9972B005067E5 /* DynamicServiceResponse.swift in Sources */,
 				141CDA6922F8D6F6005067E5 /* BaseView.swift in Sources */,
 			);
@@ -658,9 +752,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				141CDA9522F9DAE5005067E5 /* MockPinView.swift in Sources */,
+				144BA6E122FAE19900822478 /* MockTransactionsView.swift in Sources */,
 				141CDA8D22F9CC2C005067E5 /* PinPresenter_Tests.swift in Sources */,
 				141CDA8B22F9C875005067E5 /* ATMService_Tests.swift in Sources */,
 				141CDA9122F9D667005067E5 /* MockATMService.swift in Sources */,
+				14A6B4D722FAE6190091CDA8 /* TransactionsPresenter_Tests.swift in Sources */,
 				141CDA3822F8AF8D005067E5 /* Gokada_ATMTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

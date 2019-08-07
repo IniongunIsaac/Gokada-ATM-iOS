@@ -1,8 +1,8 @@
 //
-//  MockPinView.swift
+//  MockTransactionsView.swift
 //  Gokada ATMTests
 //
-//  Created by Isaac Iniongun on 06/08/2019.
+//  Created by Isaac Iniongun on 07/08/2019.
 //  Copyright © 2019 Ing Groups. All rights reserved.
 //
 
@@ -10,9 +10,10 @@ import XCTest
 import PopupDialog
 @testable import Gokada_ATM
 
-class MockPinView: PinView {
+class MockTransactionsView: TransactionsView {
     
-    private(set) var navigateToTransactionsCalled: Bool = false
+    private(set) var displayCustomerInfoCalled: Bool = false
+    private(set) var navigateToViewControllerCalled: Bool = false
     private(set) var showAlertCalled: Bool = false
     private(set) var showSuccessAlertCalled: Bool = false
     private(set) var showFailureAlertCalled: Bool = false
@@ -29,8 +30,12 @@ class MockPinView: PinView {
     private(set) var showPinConfirmationAlertCalled: Bool = false
     private(set) var showTransactionInProgressDialogCalled: Bool = false
     
-    func navigateToTransactions(cardData: CardData) {
-        navigateToTransactionsCalled = true
+    func displayCustomerInfo(customerName: String) {
+        displayCustomerInfoCalled = true
+    }
+    
+    func navigateToViewController(transactionType: TransactionType, cardData: CardData, selectedAccount: Account) {
+        navigateToViewControllerCalled = true
     }
     
     func showAlert(message: String) {
@@ -129,5 +134,5 @@ class MockPinView: PinView {
         showTransactionInProgressDialogCalled = true
         return nil
     }
-
+    
 }

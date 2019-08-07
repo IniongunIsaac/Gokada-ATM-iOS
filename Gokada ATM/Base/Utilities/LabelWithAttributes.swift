@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-@IBDesignable class LabelWithAttributes: UITextField {
+@IBDesignable class LabelWithAttributes: UILabel {
     @IBInspectable override var cornerRadius: CGFloat {
         get {
             return layer.cornerRadius
