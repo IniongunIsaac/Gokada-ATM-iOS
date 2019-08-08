@@ -29,4 +29,17 @@ protocol ATMService {
     ///     - account: `Account` to be withdrawn from.
     /// - Returns: `ServiceResult` representing the result of the withdrawal operation
     func withdrawCash(amount: String, account: Account) -> ServiceResult
+    
+    ///Make an airtime topup operation.
+    /// - Parameters:
+    ///     - amount: A string representing the amount of airtime to be purchased.
+    ///     - phoneNo: A string representing the phone number to buy airtime for.
+    ///     - account: `Account` to buy airtime from.
+    /// - Returns: `ServiceResult` representing the result of the airtime purchase operation
+    func buyAirtime(amount: String, phoneNo: String, account: Account) -> ServiceResult
+    
+    
+    ///Gets available networks
+    /// - Returns: A String Array representing the available network names
+    func getNetworks() -> [String]
 }

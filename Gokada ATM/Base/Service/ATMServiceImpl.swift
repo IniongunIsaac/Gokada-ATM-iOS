@@ -30,7 +30,7 @@ class ATMServiceImpl: ATMService {
         
         if isMultipleOf500Or1000(number: floatAmount) {
             //Obtain approval from bank before cash is dispensed to user.
-            //We assume here that all account can maintain a zero balance.
+            //We assume here that all accounts can maintain a zero balance.
             if (account.balance - floatAmount) > 0.0 {
                 return ServiceResult(code: 200, resultType: .success, messageDescription: "Transaction Approved. Please take your cash!", data: Account(type: account.type, number: account.number, balance: account.balance - floatAmount))
             } else {
@@ -40,6 +40,21 @@ class ATMServiceImpl: ATMService {
         
         return ServiceResult(code: 400, resultType: .failure, messageDescription: "Please ensure the amount entered is a multiple of 500 or 1000.", data: nil)
         
+    }
+    
+    func buyAirtime(amount: String, phoneNo: String, account: Account) -> ServiceResult {
+        let floatAmount = Float(amount)!
+        //Obtain approval from bank before cash is dispensed to user.
+        //We assume here that all accounts can maintain a zero balance.
+        if (account.balance - floatAmount) > 0.0 {
+            return ServiceResult(code: 200, resultType: .success, messageDescription: "Transaction Approved. Please check \(phoneNo) for purchased airtime!", data: Account(type: account.type, number: account.number, balance: account.balance - floatAmount))
+        } else {
+            return ServiceResult(code: 400, resultType: .failure, messageDescription: "Transaction not approved, insufficient balance.", data: nil)
+        }
+    }
+    
+    func getNetworks() -> [String] {
+        return ["MTN", "Glo", "Airtel", "Etisalat"]
     }
     
 }

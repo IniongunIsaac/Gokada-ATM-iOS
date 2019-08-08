@@ -16,6 +16,7 @@ class TransactionsPresenter: BasePresenter {
     var transactionType: TransactionType!
     var cardData: CardData!
     var selectedAccount: Account!
+    var confirmationPin = ""
     
     var pinConfirmationAttempts = 0
     
@@ -74,11 +75,14 @@ class TransactionsPresenter: BasePresenter {
             //This is a security mesure that ensures that the user is able to confirm his/her PIN before proceeding with the transaction
             view.showPinConfirmationAlert { pinValue in
                 
+                //Set confirmationPin
+                self.confirmationPin = pinValue
+                
                 //ensure pinValue is not empty
-                if pinValue.isEmpty {
+                if self.confirmationPin.isEmpty {
                     self.view.showFailureAlert(with: "Please enter a PIN!")
                 } else {
-                    if self.service.validatePin(cardPin: pinValue) {
+                    if self.service.validatePin(cardPin: self.confirmationPin) {
                         //Pin is valid, proceed with the transaction
                         let popup = self.view.showTransactionInProgressDialog { }
                         

@@ -55,6 +55,12 @@
 		14974ABD22FB0725009D7DA7 /* TransactionInProgressDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14974ABB22FB0725009D7DA7 /* TransactionInProgressDialogViewController.swift */; };
 		14974ABE22FB0725009D7DA7 /* TransactionInProgressDialogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14974ABC22FB0725009D7DA7 /* TransactionInProgressDialogViewController.xib */; };
 		14974AC022FB26A2009D7DA7 /* TransactionReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14974ABF22FB26A2009D7DA7 /* TransactionReceipt.swift */; };
+		14974AC322FB777A009D7DA7 /* AirtimeTopupPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14974AC222FB777A009D7DA7 /* AirtimeTopupPresenter.swift */; };
+		14974AC522FB7785009D7DA7 /* AirtimeTopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14974AC422FB7785009D7DA7 /* AirtimeTopupView.swift */; };
+		14974AC822FC2B2E009D7DA7 /* MockWithdrawCashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14974AC722FC2B2E009D7DA7 /* MockWithdrawCashView.swift */; };
+		14974ACA22FC2BE6009D7DA7 /* WithdrawCashPresenter_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14974AC922FC2BE6009D7DA7 /* WithdrawCashPresenter_Tests.swift */; };
+		14974ACD22FC33ED009D7DA7 /* MockAirtimeTopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14974ACC22FC33ED009D7DA7 /* MockAirtimeTopupView.swift */; };
+		14974ACF22FC349F009D7DA7 /* AirtimeTopupPresenter_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14974ACE22FC349F009D7DA7 /* AirtimeTopupPresenter_Tests.swift */; };
 		14A6B4D722FAE6190091CDA8 /* TransactionsPresenter_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6B4D622FAE6190091CDA8 /* TransactionsPresenter_Tests.swift */; };
 		1BA423E6AC0EAFE4878CA1AD /* Pods_Gokada_ATMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4290627A9E244F007211B257 /* Pods_Gokada_ATMUITests.framework */; };
 		1C506143A5C37A8E611683ED /* Pods_Gokada_ATMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A67AECE3E3C9326FFDBBB3D /* Pods_Gokada_ATMTests.framework */; };
@@ -134,6 +140,12 @@
 		14974ABB22FB0725009D7DA7 /* TransactionInProgressDialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionInProgressDialogViewController.swift; sourceTree = "<group>"; };
 		14974ABC22FB0725009D7DA7 /* TransactionInProgressDialogViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TransactionInProgressDialogViewController.xib; sourceTree = "<group>"; };
 		14974ABF22FB26A2009D7DA7 /* TransactionReceipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionReceipt.swift; sourceTree = "<group>"; };
+		14974AC222FB777A009D7DA7 /* AirtimeTopupPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtimeTopupPresenter.swift; sourceTree = "<group>"; };
+		14974AC422FB7785009D7DA7 /* AirtimeTopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtimeTopupView.swift; sourceTree = "<group>"; };
+		14974AC722FC2B2E009D7DA7 /* MockWithdrawCashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWithdrawCashView.swift; sourceTree = "<group>"; };
+		14974AC922FC2BE6009D7DA7 /* WithdrawCashPresenter_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawCashPresenter_Tests.swift; sourceTree = "<group>"; };
+		14974ACC22FC33ED009D7DA7 /* MockAirtimeTopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAirtimeTopupView.swift; sourceTree = "<group>"; };
+		14974ACE22FC349F009D7DA7 /* AirtimeTopupPresenter_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirtimeTopupPresenter_Tests.swift; sourceTree = "<group>"; };
 		14A6B4D622FAE6190091CDA8 /* TransactionsPresenter_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsPresenter_Tests.swift; sourceTree = "<group>"; };
 		1A67AECE3E3C9326FFDBBB3D /* Pods_Gokada_ATMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gokada_ATMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		208A73400A94833FBBC8D274 /* Pods-Gokada ATM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gokada ATM.release.xcconfig"; path = "Target Support Files/Pods-Gokada ATM/Pods-Gokada ATM.release.xcconfig"; sourceTree = "<group>"; };
@@ -209,6 +221,8 @@
 		141CDA3622F8AF8D005067E5 /* Gokada ATMTests */ = {
 			isa = PBXGroup;
 			children = (
+				14974ACB22FC33CC009D7DA7 /* Airtime Topup */,
+				14974AC622FC27E1009D7DA7 /* Withdraw Cash */,
 				144BA6DF22FAE17A00822478 /* Transactions */,
 				141CDA8F22F9D3B9005067E5 /* Pin */,
 				141CDA8E22F9D3AA005067E5 /* Service */,
@@ -404,6 +418,7 @@
 		144BA6D722FADC3400822478 /* Airtime Topup */ = {
 			isa = PBXGroup;
 			children = (
+				14974AC122FB775B009D7DA7 /* MVP */,
 				144BA6DB22FADC8900822478 /* AirtimeTopupViewController.swift */,
 			);
 			path = "Airtime Topup";
@@ -442,6 +457,33 @@
 				14974ABC22FB0725009D7DA7 /* TransactionInProgressDialogViewController.xib */,
 			);
 			path = "Transaction Progress";
+			sourceTree = "<group>";
+		};
+		14974AC122FB775B009D7DA7 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				14974AC222FB777A009D7DA7 /* AirtimeTopupPresenter.swift */,
+				14974AC422FB7785009D7DA7 /* AirtimeTopupView.swift */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		14974AC622FC27E1009D7DA7 /* Withdraw Cash */ = {
+			isa = PBXGroup;
+			children = (
+				14974AC722FC2B2E009D7DA7 /* MockWithdrawCashView.swift */,
+				14974AC922FC2BE6009D7DA7 /* WithdrawCashPresenter_Tests.swift */,
+			);
+			path = "Withdraw Cash";
+			sourceTree = "<group>";
+		};
+		14974ACB22FC33CC009D7DA7 /* Airtime Topup */ = {
+			isa = PBXGroup;
+			children = (
+				14974ACC22FC33ED009D7DA7 /* MockAirtimeTopupView.swift */,
+				14974ACE22FC349F009D7DA7 /* AirtimeTopupPresenter_Tests.swift */,
+			);
+			path = "Airtime Topup";
 			sourceTree = "<group>";
 		};
 		CA3909E0F11C3EEF89471404 /* Frameworks */ = {
@@ -712,6 +754,7 @@
 				144BA6CE22FA689A00822478 /* TransactionsViewController.swift in Sources */,
 				141CDA8322F95D9C005067E5 /* ServiceResult.swift in Sources */,
 				144BA6DA22FADC7300822478 /* WithdrawCashViewController.swift in Sources */,
+				14974AC322FB777A009D7DA7 /* AirtimeTopupPresenter.swift in Sources */,
 				14974AC022FB26A2009D7DA7 /* TransactionReceipt.swift in Sources */,
 				144BA6CC22FA5F9D00822478 /* AccountType.swift in Sources */,
 				144BA6D522FAC47D00822478 /* TransactionsView.swift in Sources */,
@@ -727,6 +770,7 @@
 				141CDA2322F8AF8A005067E5 /* AppDelegate.swift in Sources */,
 				144BA6D322FAC2DC00822478 /* TransactionType.swift in Sources */,
 				141CDA6D22F8D751005067E5 /* BaseViewController.swift in Sources */,
+				14974AC522FB7785009D7DA7 /* AirtimeTopupView.swift in Sources */,
 				141CDA6122F8D644005067E5 /* PinView.swift in Sources */,
 				141CDA8522F95DE0005067E5 /* ServiceResultType.swift in Sources */,
 				141CDA7B22F94951005067E5 /* UIViewWithAttributes.swift in Sources */,
@@ -754,6 +798,10 @@
 				141CDA9522F9DAE5005067E5 /* MockPinView.swift in Sources */,
 				144BA6E122FAE19900822478 /* MockTransactionsView.swift in Sources */,
 				141CDA8D22F9CC2C005067E5 /* PinPresenter_Tests.swift in Sources */,
+				14974ACD22FC33ED009D7DA7 /* MockAirtimeTopupView.swift in Sources */,
+				14974ACA22FC2BE6009D7DA7 /* WithdrawCashPresenter_Tests.swift in Sources */,
+				14974AC822FC2B2E009D7DA7 /* MockWithdrawCashView.swift in Sources */,
+				14974ACF22FC349F009D7DA7 /* AirtimeTopupPresenter_Tests.swift in Sources */,
 				141CDA8B22F9C875005067E5 /* ATMService_Tests.swift in Sources */,
 				141CDA9122F9D667005067E5 /* MockATMService.swift in Sources */,
 				14A6B4D722FAE6190091CDA8 /* TransactionsPresenter_Tests.swift in Sources */,

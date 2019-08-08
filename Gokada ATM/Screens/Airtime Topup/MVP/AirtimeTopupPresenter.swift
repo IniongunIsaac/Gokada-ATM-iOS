@@ -1,5 +1,5 @@
 //
-//  WithdrawCashPresenter.swift
+//  AirtimeTopupPresenter.swift
 //  Gokada ATM
 //
 //  Created by Isaac Iniongun on 07/08/2019.
@@ -7,21 +7,22 @@
 //
 
 import Foundation
-import Fakery
 
-class WithdrawCashPresenter: BasePresenter {
+class AirtimeTopupPresenter: BasePresenter {
     
-    var service: ATMService!
-    var view: WithdrawCashView!
+    let service: ATMService!
+    let view: AirtimeTopupView!
+    
+    var availableNetworks = [String]()
+    var selectedNetwork: String!
+    var pinConfirmationAttempts = 0
+    var confirmationPin = ""
     
     var transactionType: TransactionType!
     var cardData: CardData!
     var account: Account!
     
-    var pinConfirmationAttempts = 0
-    var confirmationPin = ""
-    
-    init(service: ATMService, view: WithdrawCashView) {
+    init(service: ATMService, view: AirtimeTopupView) {
         self.service = service
         self.view = view
     }
@@ -42,10 +43,30 @@ class WithdrawCashPresenter: BasePresenter {
         self.account = account
     }
     
-    func performCashWithdrawal(amount: String) {
-        
+    func getAvailableNetworks() {
+        if availableNetworks.isEmpty {
+            availableNetworks = service.getNetworks()
+            showAvailableNetworksOnView()
+        } else {
+            showAvailableNetworksOnView()
+        }
+    }
+    
+    private func showAvailableNetworksOnView() {
+        view.showActionSheet(forActions: availableNetworks, message: "Choose Network") { action, index in
+            self.selectedNetwork = self.availableNetworks[index]
+            self.view.setSelectedNetwork(networkName: self.selectedNetwork)
+        }
+    }
+    
+    func performRechargeOperation(amount: String, phoneNo: String) {
+        //validate amount
         if amount.isEmpty {
             view.showFailureAlert(with: "Please enter an amount!")
+        }
+        //validate phone number
+        else if phoneNo.isEmpty || phoneNo.count != 11 {
+            view.showFailureAlert(with: "Please enter a phone number with exactly 11digits!")
         }
         //ensure that the user is not able to continue after AppConstants.MAX_LOGIN_FAILURE_ATTEMPTS failure attempts
         else if self.pinConfirmationAttempts >= AppConstants.MAX_LOGIN_FAILURE_ATTEMPTS {
@@ -64,7 +85,7 @@ class WithdrawCashPresenter: BasePresenter {
                 if self.confirmationPin.isEmpty {
                     self.view.showFailureAlert(with: "Please enter a PIN!")
                 } else {
-                     if self.service.validatePin(cardPin: self.confirmationPin) {
+                    if self.service.validatePin(cardPin: self.confirmationPin) {
                         //Pin is valid, proceed with the transaction
                         let popup = self.view.showTransactionInProgressDialog { }
                         
@@ -73,9 +94,9 @@ class WithdrawCashPresenter: BasePresenter {
                             popup?.dismiss()
                             
                             //perform cash withdrawal
-                            let result = self.service.withdrawCash(amount: amount, account: self.account)
+                            let result = self.service.buyAirtime(amount: amount, phoneNo: phoneNo, account: self.account)
                             
-                            //process cash withdrawal result and take actions as needed.
+                            //process airtime purchase result and take actions as needed.
                             switch result.resultType {
                                 
                             //Handle successful cash withdrawal
@@ -91,10 +112,10 @@ class WithdrawCashPresenter: BasePresenter {
                                     //Get TransactionReceipt
                                     let transReceipt = TransactionReceipt(customerName: self.cardData.name, date: dateTimeStringArr[0], time: dateTimeStringArr[1], machineLocation: getRandomAddress(), transactionType: String(describing: self.transactionType!).capitalized, transactionAccount: "\(String(describing: resultAccount.type).capitalized) (\(resultAccount.number))", amount: String(describing: Float(amount)!), endingBalance: String(describing: resultAccount.balance), availableBalance: String(describing: resultAccount.balance))
                                     
-                                    //show transaction receipt for cash withdrawal
+                                    //Show transaction receipt for airtime purchase
                                     self.view.navigateToTransactionReceipt(transactionReceipt: transReceipt)
                                 })
-                            
+                                
                             // Handle failed cash withdrawal transaction
                             case .failure:
                                 self.view.showFailureAlert(with: result.messageDescription)
@@ -110,7 +131,6 @@ class WithdrawCashPresenter: BasePresenter {
                 
             }
         }
-        
     }
     
 }

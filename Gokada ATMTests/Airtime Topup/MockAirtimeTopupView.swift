@@ -1,20 +1,19 @@
 //
-//  MockTransactionsView.swift
+//  MockAirtimeTopupView.swift
 //  Gokada ATMTests
 //
-//  Created by Isaac Iniongun on 07/08/2019.
+//  Created by Isaac Iniongun on 08/08/2019.
 //  Copyright © 2019 Ing Groups. All rights reserved.
 //
 
-import XCTest
+import Foundation
 import PopupDialog
 @testable import Gokada_ATM
 
-class MockTransactionsView: TransactionsView {
+class MockAirtimeTopupView: AirtimeTopupView {
     
+    private(set) var setSelectedNetworkCalled: Bool = false
     private(set) var navigateToTransactionReceiptCalled: Bool = false
-    private(set) var displayCustomerInfoCalled: Bool = false
-    private(set) var navigateToViewControllerCalled: Bool = false
     private(set) var showAlertCalled: Bool = false
     private(set) var showSuccessAlertCalled: Bool = false
     private(set) var showFailureAlertCalled: Bool = false
@@ -31,16 +30,12 @@ class MockTransactionsView: TransactionsView {
     private(set) var showPinConfirmationAlertCalled: Bool = false
     private(set) var showTransactionInProgressDialogCalled: Bool = false
     
+    func setSelectedNetwork(networkName: String) {
+        setSelectedNetworkCalled = true
+    }
+    
     func navigateToTransactionReceipt(transactionReceipt: TransactionReceipt) {
         navigateToTransactionReceiptCalled = true
-    }
-    
-    func displayCustomerInfo(customerName: String) {
-        displayCustomerInfoCalled = true
-    }
-    
-    func navigateToViewController(transactionType: TransactionType, cardData: CardData, selectedAccount: Account) {
-        navigateToViewControllerCalled = true
     }
     
     func showAlert(message: String) {

@@ -127,3 +127,12 @@ func getCurrentDateTime(format: String = "yyyy-MM-dd HH:mm:ss") -> String {
 func getRandomAddress() -> String {
     return faker.address.streetAddress(includeSecondary: true) + ", " + faker.address.city() + ", " + faker.address.state() + ", " + faker.address.country()
 }
+
+//MARK: - UIButton Extensions
+extension UIButton {
+    
+    func changeButtonTitle(to title: String) {
+        self.setTitle(title, for: .normal)
+    }
+    
+}

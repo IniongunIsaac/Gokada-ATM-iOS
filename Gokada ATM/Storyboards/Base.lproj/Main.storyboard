@@ -382,7 +382,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zHt-Xl-HiA" customClass="TextfieldWithAttributes" customModule="Gokada_ATM" customModuleProvider="target">
+                            <textField opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zHt-Xl-HiA" customClass="TextfieldWithAttributes" customModule="Gokada_ATM" customModuleProvider="target">
                                 <rect key="frame" x="20" y="228" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="3d6-bA-6lE"/>
@@ -443,6 +443,7 @@
                         <outlet property="amountTextfield" destination="bTl-YG-nEv" id="FyE-WO-g79"/>
                         <outlet property="chooseNetworkButton" destination="aJp-b9-uex" id="l9a-Qj-BHM"/>
                         <outlet property="phoneNoTextfield" destination="zHt-Xl-HiA" id="Kp2-zV-TMF"/>
+                        <segue destination="D2g-Su-KBy" kind="show" identifier="showTransactionReceiptViewController" id="9UC-Fv-4Eq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WBZ-M9-5Dm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -868,6 +869,6 @@
         <image name="dropdown-black" width="10.5" height="10.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="EFP-jg-gn2"/>
+        <segue reference="9UC-Fv-4Eq"/>
     </inferredMetricsTieBreakers>
 </document>

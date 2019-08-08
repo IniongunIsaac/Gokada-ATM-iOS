@@ -255,12 +255,25 @@ class BaseViewController: UIViewController, BaseView {
 
 //MARK: - UITextFieldDelegate Protocol
 extension BaseViewController: UITextFieldDelegate {
-    //Limit number of characters for textfield to 4
+    
+    //Limit number of characters for textfield to a certain number
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        let maxLength = 4
+        
+        //Set limit on textfield characters to 4 by default for PIN textfields
+        var maxLength = 4
+        
+        //Set limit on textfield characters to 11 by Phone number textfields
+        //We know the textfield is a phone number textfield because we set a tag value of 11
+        //for phone number textfields in the application
+        if textField.tag == 11 {
+            maxLength = 11
+        }
+        
+        //Handle textfields validation
         let currentString: NSString = textField.text! as NSString
         let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
         return newString.length <= maxLength
+        
     }
     
 }
