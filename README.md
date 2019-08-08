@@ -10,11 +10,11 @@ The operation include:
 
 Additionally, the application displays a transaction receipt after every transaction performed above.
 
-###How to run(installation):
+### How to run(installation):
 
 Clone this repository and open the source file using XCode and run the project via the XCode Simulator or a connected physical device.
 
-###Note:
+### Note:
 
 The application was built using:
 
